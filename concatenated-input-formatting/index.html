@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      ECAG Examples - Concatenated Data Types - Input Data Formatting
+    </title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+  <body>
+    <h1>Concatenated Data Types - Input Data Formatting</h1>
+    <form>
+      <fieldset>
+        <legend>Date of birth</legend>
+        <p id="help-text">Your data will not be shared with anyone else</p>
+
+        <div id="concatenated-container">
+          <div>
+            <label for="Month">Month</label>
+            <input
+              type="text"
+              size="4"
+              maxlength="2"
+              id="Month"
+              required
+              aria-required
+              pattern="[0-9]{2}"
+              title="Month must be a two digit number"
+              aria-describedby="help-text error-Month"
+              inputmode="numeric"
+            />
+          </div>
+          <div>
+            <label for="Day">Day</label>
+            <input
+              type="text"
+              size="4"
+              maxlength="2"
+              id="Day"
+              required
+              aria-required
+              pattern="[0-9]{2}"
+              title="Day must be a two digit number"
+              aria-describedby="error-Day"
+              inputmode="numeric"
+            />
+          </div>
+          <div>
+            <label for="Year">Year</label>
+            <input
+              type="text"
+              size="8"
+              maxlength="4"
+              id="Year"
+              required
+              aria-required
+              pattern="[0-9]{4}"
+              title="Year must be a four digit number"
+              aria-describedby="error-Year"
+              inputmode="numeric"
+            />
+          </div>
+        </div>
+
+        <div id="errors">
+          <span class="error" aria-live="polite" id="error-Month"></span>
+          <span class="error" aria-live="polite" id="error-Day"></span>
+          <span class="error" aria-live="polite" id="error-Year"></span>
+        </div>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>

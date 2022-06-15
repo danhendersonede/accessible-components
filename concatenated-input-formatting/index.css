@@ -1,0 +1,76 @@
+* {
+  font-family: "CVS Health Sans", Helvetica, Arial, sans-serif;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+#help-text {
+  margin-bottom: 1rem;
+}
+
+#concatenated-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+#concatenated-container div {
+  margin-right: 1rem;
+}
+
+legend,
+label {
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 0;
+}
+
+label {
+  display: block;
+  font-size: 1.1rem;
+}
+
+input {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: #000000 1px solid;
+  font-size: 1rem;
+}
+
+#concatenated-container.allDirty input.dirty:invalid {
+  border-color: #900;
+  background-color: #fdd;
+}
+
+#errors {
+  margin-top: 1rem;
+}
+
+.error {
+  display: none;
+  color: red;
+  margin-bottom: 0.25rem;
+}
+
+#errors.allDirty .error {
+  display: block;
+}
+
+.error.active {
+  padding: 0.3rem;
+}
+
+:focus {
+  outline-color: #0085ff;
+  outline-style: solid;
+  outline-width: 0.25rem;
+  outline-offset: 0.25rem;
+  box-shadow: none;
+}
