@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 1rem 0.25rem;
+}
+
+header {
+  background-color: #214ca3;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+#headlines {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
+  /* grid: repeat(auto-flow, max-content) / 280px; */
+  row-gap: 4rem;
+  column-gap: 2rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .story:nth-of-type(1) {
+  grid-column: auto / span 3;
+  flex-direction: row;
+} */
+
+dialog[open] + main {
+  background-color: gray;
+}
+
+dialog h2 {
+  margin-top: 0;
+}
+
+dialog {
+  margin-top: 2rem;
+  max-width: 600px;
+  width: 600px;
+  display: grid;
+  /* grid-template-columns: min-content 60ch; */
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 300px));
+  column-gap: 1rem;
+}
