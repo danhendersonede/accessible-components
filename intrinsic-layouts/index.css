@@ -46,9 +46,13 @@ dialog h2 {
 dialog {
   margin-top: 2rem;
   max-width: 600px;
-  width: 600px;
+  width: 85%;
   display: grid;
   /* grid-template-columns: min-content 60ch; */
-  grid-template-columns: repeat(auto-fit, minmax(min-content, 300px));
+  grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
   column-gap: 1rem;
 }
+/* 
+#content {
+  grid-column: span 4;
+} */
